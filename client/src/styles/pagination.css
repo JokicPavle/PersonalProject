@@ -1,0 +1,24 @@
+:root {
+  --primary-color: #ec4186;
+  --secondary-color: #ee544a;
+  --dark-color: #38124a;
+  --white-color: #ffffff;
+  --mobileMenuBG: 236, 65, 134;
+}
+.pagination.page-item.page-link a {
+  cursor: pointer;
+}
+.pagination .page-link {
+  background-color: #dc3545 !important; /* Primer: Crvena pozadina */
+  color: white !important;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #c82333 !important; /* Tamnija crvena za aktivnu stranicu */
+  color: white !important;
+}
+
+.pagination .page-link:hover {
+  background-color: #c82333 !important; /* Tamnija crvena na hover */
+  color: white !important;
+}

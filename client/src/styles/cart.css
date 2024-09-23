@@ -1,0 +1,33 @@
+:root {
+  --primary-color: #ec4186;
+  --secondary-color: #ee544a;
+  --dark-color: #38124a;
+  --white-color: #ffffff;
+}
+.cart-container {
+  position: fixed;
+  z-index: 3;
+  background-color: var(--dark-color);
+  height: 100%;
+  width: 100%;
+  right: 0;
+  top: 0;
+  transition: transform 0.5s ease-in-out;
+  z-index: 10;
+  overflow-y: auto;
+}
+.closeImg {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.cartProductImg {
+  width: 80px;
+}
+@media only screen and (min-width: 760px) {
+  .cart-container {
+    width: 50%;
+  }
+}

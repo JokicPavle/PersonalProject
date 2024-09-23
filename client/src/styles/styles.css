@@ -1,0 +1,39 @@
+:root {
+  --primary-color: #ec4186;
+  --secondary-color: #ee544a;
+  --dark-color: #38124a;
+  --white-color: #ffffff;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background-color: var(--dark-color) !important;
+  background-image: radial-gradient(
+      circle at 10% 10%,
+      var(--primary-color) 20%,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 70% 60%,
+      var(--secondary-color) 2%,
+      transparent 20%
+    ),
+    radial-gradient(circle at 50% 80%, var(--primary-color) 2%, transparent 30%),
+    radial-gradient(
+      circle at 80% 40%,
+      var(--secondary-color) 2%,
+      transparent 20%
+    ),
+    radial-gradient(circle at 30% 70%, var(--primary-color) 2%, transparent 30%);
+  background-blend-mode: overlay !important;
+  background-size: cover !important;
+}
+.divider::after {
+  content: "";
+  display: block;
+  margin: 30px auto;
+  width: 90%;
+  height: 2px;
+  background: var(--primary-color);
+}

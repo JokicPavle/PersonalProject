@@ -1,0 +1,74 @@
+:root {
+  --primary-color: #ec4186;
+  --secondary-color: #ee544a;
+  --dark-color: #38124a;
+  --white-color: #ffffff;
+}
+
+.loading-text {
+  color: var(--primary-color);
+}
+.sale {
+  text-decoration: line-through;
+  color: var(--secondary-color);
+}
+.desc-text {
+  line-clamp: 4;
+  overflow: hidden;
+  box-orient: vertical;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+.card-img-top {
+  width: 100%;
+  height: 160px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.add-btn {
+  position: relative;
+  font-weight: 500;
+}
+
+.add-btn .add-item {
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  top: -10px;
+  right: -10px;
+}
+.add-btn .add-item:before {
+  content: "1";
+  display: block;
+  line-height: 24px;
+  height: 24px;
+  width: 24px;
+  font-size: 12px;
+  background-color: var(--primary-color);
+  font-weight: 600;
+  color: white;
+  border-radius: 20px;
+  text-align: center;
+}
+.sendtocart .add-item {
+  display: block;
+  animation: xAxis 1s forwards cubic-bezier(1, 0.44, 0.84, 0.165);
+}
+
+.sendtocart .add-item:before {
+  animation: yAxis 1s alternate forwards cubic-bezier(0.3, 1, 0.5, 1); /* Prilagođena krivulja */
+}
+
+@keyframes xAxis {
+  100% {
+    transform: translateX(calc(50vw - 105px));
+  }
+}
+
+@keyframes yAxis {
+  100% {
+    transform: translateY(calc(-95vh + 75px)); /* Više se pomera nagore */
+  }
+}
